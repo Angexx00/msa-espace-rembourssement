@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <rect width="120" height="120" fill="#00558c" rx="15" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">
+    msa
+  </text>
+</svg>

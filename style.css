@@ -1,0 +1,144 @@
+/* Couleurs MSA */
+:root {
+    --msa-blue: #0056b3;
+    --msa-dark-blue: #003366;
+    --msa-green: #008a43;
+    --msa-light-gray: #f5f5f5;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--msa-light-gray);
+}
+
+.msa-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.msa-header {
+    background: linear-gradient(135deg, var(--msa-blue), var(--msa-dark-blue));
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.msa-logo {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.msa-form {
+    padding: 30px;
+}
+
+.msa-notification {
+    background: #e7f3fe;
+    border-left: 4px solid var(--msa-blue);
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+}
+
+.msa-form-group {
+    margin-bottom: 20px;
+}
+
+.msa-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.msa-form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.msa-btn {
+    background: var(--msa-green);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.msa-btn:hover {
+    background: #007a3a;
+}
+
+.msa-error {
+    color: #d9534f;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #fdf7f7;
+    border-radius: 4px;
+}
+
+/* Styles spécifiques pour la page SMS */
+.msa-code-inputs {
+    display: flex;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.msa-code-inputs input {
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    font-size: 24px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+.msa-code-inputs input:focus {
+    border-color: var(--msa-blue);
+    outline: none;
+}
+
+/* Barre de progression */
+.msa-progress {
+    display: flex;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.msa-progress-step {
+    flex: 1;
+    padding: 10px;
+    position: relative;
+}
+
+.msa-progress-step.active {
+    font-weight: bold;
+    color: var(--msa-blue);
+}
+
+.msa-progress-step.completed {
+    color: var(--msa-green);
+}
+
+.msa-progress-step:not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 20px;
+    height: 2px;
+    background: #ddd;
+}
